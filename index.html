@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>결혼 청첩장</title>
+    <style>
+        * {
+            font-family: 'IBM Plex Sans KR', sans-serif;
+        }
+        body, h1, h2, h3, p, a {
+            font-size: 16px;
+            margin: 0px;
+            padding: 0px;
+            text-decoration: none;
+            font-weight: normal;
+        }
+        .wrap {
+            width: 350px;
+            margin: auto;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+        .h1{
+          background-color: pink;
+          padding: 20px;       
+          color: white;
+          font-weight: 500;
+          font-size: 16px;
+        }
+        .pic{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 15px;
+        }
+        .pic > img{
+          width: 250px;
+          border: 2px solid pink;
+        }
+        .pic > p{
+          color: pink;
+          font-size: 16px;
+        }
+        .name{
+          border-top: 1px solid pink;
+          border-bottom: 1px solid pink;
+          padding: 8px 25px;
+          font-size: 24px;
+          font-weight: 500;
+          color: pink;
+        }
+        .main{
+          background-color: pink;
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+          color: white;
+        }
+        .main > .header{
+          align-self: center;
+          font-size: 20px;
+        }
+        .main > .content{
+          line-height: 5px;
+        }
+        .main > .bottom{
+          text-align: center;
+        }
+        .bottom{
+          display: center;
+          flex-direction: column;
+          align-items: center;
+          width: 250px;
+          gap: 10px;
+        }
+        .bottom > p {
+          color: pink;
+          font-size: 16px;
+        }
+        .bottom > input{}
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <h1 class="h1">영희와 철수의 첫 시작을 축하해주세요</h1>
+        <div class="pic">
+            <p>Save The Date</p>
+            <img src="wedding.png"/>
+            <p>12.31.SUNDAY.PM.12:30</p>
+        </div>
+        <div class="name">
+            <p>김영희 & 이철수</p>
+        </div>
+        <div class="main">
+            <p class="header">INVITATION</p>
+            <p class="content">
+              서로 다른 두 사람이 만나<br/>
+              사랑으로 하나 되는 자리에<br/>
+              소중한 여러분들을 초대합니다.<br/>
+              기쁠 때나, 슬플 때나<br/>
+              서로를 사랑으로 품으며<br/>
+              행복의 계단을 쌓아가겠습니다.<br/>
+              저희의 첫 시작을 함께 해주신다면<br/>
+              감사한 마음 깊이 간직하며 잘 살겠습니다.
+            </p>
+            <p class="bottom">2023. 12. 31. SUN. PM 12:30<br/>
+               스파르타웨딩 르탄홀
+            </p>
+        </div>
+        <div class="bottom">
+            <p>축하 메세지를 남겨주세요</p>
+            <input/>
+            <textarea></textarea>
+            <button>메세지 남기기</button>
+        </div>
+    </div>
+</body>
+</html>
